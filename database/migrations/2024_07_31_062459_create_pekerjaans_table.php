@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('id_kategori')->constrained('kategoris')->onDelete('cascade');
             $table->foreignId('id_bobot_kerja')->constrained('bobot_kerjas')->onDelete('cascade');
             $table->string('foto_sebelum');
-            $table->string('foto_sesudah')->nullable()->change();
+            $table->string('foto_sesudah');
             $table->timestamps();
         });
     }
